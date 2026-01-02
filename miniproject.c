@@ -9,11 +9,10 @@ void convertKtoF();
 
 int main() {
     int choice;
-    // The Menu Loop
+
     do {
-        printf("\n========================================\n");
         printf("   Unit-Aware Temperature Converter\n");
-        printf("========================================\n");
+        printf("                                          \n");
         printf("1. Celsius to Fahrenheit\n");
         printf("2. Celsius to Kelvin\n");
         printf("3. Fahrenheit to Celsius\n");
@@ -21,7 +20,7 @@ int main() {
         printf("5. Kelvin to Celsius\n");
         printf("6. Kelvin to Fahrenheit\n");
         printf("7. Exit\n");
-        printf("----------------------------------------\n");
+        printf("                                           \n");
         printf("Enter your choice (1-7): ");
         scanf("%d", &choice);
 
@@ -40,8 +39,6 @@ int main() {
 
     return 0;
 }
-
-// --- Function Definitions ---
 
 void convertCtoF() {
     float c, f;
@@ -91,9 +88,8 @@ void convertKtoF() {
     printf("Result: %.2f K = %.2f F\n", k, f);
 }
 /* OUTPUT
-========================================
    Unit-Aware Temperature Converter
-========================================
+   
 1. Celsius to Fahrenheit
 2. Celsius to Kelvin
 3. Fahrenheit to Celsius
@@ -101,21 +97,7 @@ void convertKtoF() {
 5. Kelvin to Celsius
 6. Kelvin to Fahrenheit
 7. Exit
-----------------------------------------
+
 Enter your choice (1-7): 4
 Enter temperature in Fahrenheit: 100
-Result: 100.00 F = 310.93 K
-
-========================================
-   Unit-Aware Temperature Converter
-========================================
-1. Celsius to Fahrenheit
-2. Celsius to Kelvin
-3. Fahrenheit to Celsius
-4. Fahrenheit to Kelvin
-5. Kelvin to Celsius
-6. Kelvin to Fahrenheit
-7. Exit
-----------------------------------------
-Enter your choice (1-7): 7
-Exiting program. Goodbye!  */
+Result: 100.00 F = 310.93 K */
